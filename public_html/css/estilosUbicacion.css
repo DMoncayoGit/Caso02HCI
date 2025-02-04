@@ -1,0 +1,31 @@
+
+
+/* Media Query para dispositivos móviles (menos de 600px de ancho) */
+    
+@media screen and (max-width: 600px) {
+    table.dataTable {
+        width: 100% !important;
+}
+
+/* Ocultar algunas columnas en móviles */
+table.dataTable td:nth-child(4),
+    table.dataTable th:nth-child(4) {
+        display: none;
+    }
+}
+
+/* Media Query para tablet (entre 600px y 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Ajustes para tablet */
+    table.dataTable {
+        width: 100%;
+    }
+}
+
+/* Media Query para pantallas de escritorio */
+@media screen and (min-width: 1025px) {
+    /* Aseguramos que en pantallas grandes se muestre todo bien */
+    table.dataTable {
+        width: 100%;
+    }
+}
